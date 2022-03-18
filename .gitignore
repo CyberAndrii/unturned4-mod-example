@@ -1,0 +1,5 @@
+# Visual Studio user specific files
+.vs/
+
+# Jetbrains IntelliJ
+.idea/
