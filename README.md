@@ -14,11 +14,17 @@ and ([with some issues](#but)) commands.
 ## Create a mod
 
 1. Open `src/U4.uproject`.
+
 2. View examples in `ExampleMod Content` folder.
+
    ![ContentBrowserExampleMod](assets/images/ContentBrowserExampleMod.png)
+
 3. Create a plugin under Edit > Plugin > New Plugin using the 'Content Only' template. Make sure it is enabled.
+
    ![CreateNewPlugin](assets/images/CreateNewPlugin.png)
+
 4. Open the project's directory. Move your newly created plugin's folder from `Plugins/` to `Mods/`.
+
 5. Restart the editor.
 
 ## List your map in the game's main menu
@@ -38,9 +44,13 @@ Configure created asset.
 ## Create a command
 
 1. Right click on the Content Browser window > Blueprint class.
+
 2. Select `U4_AdminCommand` class.
+
    ![PickAdminCommand](assets/images/PickAdminCommand.png)
+
 3. Add 'Execute Command' event and implement it.
+
    ![CommandImplementation](assets/images/CommandImplementation.png)
 
 ### But...
@@ -52,19 +62,32 @@ wrong. Maybe they need to be registered manually too.
 ## Build
 
 1. Open Window > Project Launcher.
+
 2. Create a Custom Launch Profile.
+
    ![CreateCustomLaunchProfile](assets/images/CreateCustomLaunchProfile.png)
+
 3. Configure like on screenshots below but change name of the mod.
+
    ![ProjectLauncher1](assets/images/ProjectLauncher1.png)
+
    ![ProjectLauncher2](assets/images/ProjectLauncher2.png)
+
 4. Press 'Launch this profile' button and wait for the build to complete.
+
    ![RunCustomLaunchProfile](assets/images/RunCustomLaunchProfile.png)
+
 5. Copy the exported folder
    from `(project directory)/Mods/(your mod name)/Saved/StagedBuilds/WindowsNoEditor/U4/Mods/(your mod name)`.
+
 6. Create a folder named `Mods` in the game's `U4` folder.
+
    ![CreateModsFolderInGameFiles](assets/images/CreateModsFolderInGameFiles.png)
+
 7. Paste the `(your mod name)` folder into the game's `U4/Mods` folder.
+
    ![PasteModIntoModsFolder](assets/images/PasteModIntoModsFolder.png)
+
 8. Run the game.
 
 ## Assets documentation
