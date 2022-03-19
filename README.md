@@ -2,8 +2,8 @@
 
 The first-ever modding tutorial for Unturned II.
 
-Note that this is not the official (made by SDG) modding tool. At this time, you can only create maps
-and ([with some issues](#but)) commands.
+Note that this is not the official (made by SDG) modding tool. At this time, it's only possible to create maps and
+commands.
 
 ![GameAndEditor](assets/images/GameAndEditor.png)
 
@@ -29,7 +29,7 @@ and ([with some issues](#but)) commands.
 
 ## List your map in the game's main menu
 
-To make your map listed in the main menu, create a Level Definition DataAsset
+To do so, create the Level Definition DataAsset
 (see `ExampleMod/Maps/ExampleMap/LD_ExampleMap` for example). Right click on the Content Browser window >
 Miscellaneous > DataAsset.
 
@@ -53,11 +53,10 @@ Configure created asset.
 
    ![CommandImplementation](assets/images/CommandImplementation.png)
 
-### But...
+4. To make commands usable, you need to register them: create an instance
+   of `ExampleMod/Blueprints/BP_CommandRegistrator` on your map and select what commands you want.
 
-There's a problem with commands: they do not seem to auto-register (should they?) like maps do. The workaround is to add
-them manually to the `U4_GameModeBase`, but then vanilla commands (e.g. help, time) stops working. Don't know what I did
-wrong. Maybe they need to be registered manually too.
+   ![RegisterCommands](assets/images/RegisterCommands.png)
 
 ## Build
 
