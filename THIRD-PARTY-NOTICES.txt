@@ -1,0 +1,8 @@
+This repository contains third-party code or other resources that may be distributed under a different license.
+
+
+Smartly Dressed Games Ltd
+    C++ headers with stub implementations are used to interact with Unturned II's code.
+
+Epic Games, Inc
+    https://www.unrealengine.com/en-US/eula/publishing

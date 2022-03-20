@@ -2,8 +2,8 @@
 
 The first-ever modding tutorial for Unturned II.
 
-Note that this is not the official (made by SDG) modding tool. At this time, it's only possible to create maps and
-commands.
+Note that this is not the official (made by SDG) modding tool. It was made by reverse engineering the game's code. At
+this time, it's only possible to create maps and commands.
 
 ![GameAndEditor](assets/images/GameAndEditor.png)
 
@@ -13,19 +13,10 @@ commands.
 
 ## Create a mod
 
-1. Open `src/U4.uproject`.
+Click the 'Create Mod' button on the toolbar. In the opened window, give your new Mod a name. Click 'Create Mod' in the
+right bottom corner.
 
-2. View examples in `ExampleMod Content` folder.
-
-   ![ContentBrowserExampleMod](assets/images/ContentBrowserExampleMod.png)
-
-3. Create a plugin under Edit > Plugin > New Plugin using the 'Content Only' template. Make sure it is enabled.
-
-   ![CreateNewPlugin](assets/images/CreateNewPlugin.png)
-
-4. Open the project's directory. Move your newly created plugin's folder from `Plugins/` to `Mods/`.
-
-5. Restart the editor.
+![CreateNewMod](assets/images/CreateNewMod.png)
 
 ## List your map in the game's main menu
 
@@ -58,36 +49,23 @@ Configure created asset.
 
    ![RegisterCommands](assets/images/RegisterCommands.png)
 
-## Build
+## Package
 
-1. Open Window > Project Launcher.
+1. Click the 'Package Mod' button on the toolbar and select which one to build.
 
-2. Create a Custom Launch Profile.
+   ![CreateCustomLaunchProfile](assets/images/PackageMod.png)
 
-   ![CreateCustomLaunchProfile](assets/images/CreateCustomLaunchProfile.png)
+2. Copy the exported folder from `src/Mods/(your mod name)/Saved/StagedBuilds/WindowsNoEditor/U4/Mods/(your mod name)`.
 
-3. Configure like on screenshots below but change name of the mod.
-
-   ![ProjectLauncher1](assets/images/ProjectLauncher1.png)
-
-   ![ProjectLauncher2](assets/images/ProjectLauncher2.png)
-
-4. Press 'Launch this profile' button and wait for the build to complete.
-
-   ![RunCustomLaunchProfile](assets/images/RunCustomLaunchProfile.png)
-
-5. Copy the exported folder
-   from `(project directory)/Mods/(your mod name)/Saved/StagedBuilds/WindowsNoEditor/U4/Mods/(your mod name)`.
-
-6. Create a folder named `Mods` in the game's `U4` folder.
+3. Create a folder named `Mods` in the game's `U4` folder.
 
    ![CreateModsFolderInGameFiles](assets/images/CreateModsFolderInGameFiles.png)
 
-7. Paste the `(your mod name)` folder into the game's `U4/Mods` folder.
+4. Paste the `(your mod name)` folder into the game's `U4/Mods` folder.
 
    ![PasteModIntoModsFolder](assets/images/PasteModIntoModsFolder.png)
 
-8. Run the game.
+5. Run the game.
 
 ## Assets documentation
 
