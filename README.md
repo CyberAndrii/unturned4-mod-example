@@ -24,8 +24,8 @@ There are 2 **IMPORTANT** things:
 
 ### Level Definition
 
-You need to create the Level Definition Data Asset (see `ExampleMod/Maps/ExampleMap/LD_ExampleMap` for example). Right
-click on the Content Browser window > Miscellaneous > DataAsset.
+You need to create the Level Definition Data Asset (see `ExampleMod/Maps/ExampleMap/LevelDefinition_ExampleMap` for
+example). Right click on the Content Browser window > Miscellaneous > DataAsset.
 
 ![CreateDataAsset](assets/images/CreateDataAsset.png)
 
@@ -39,11 +39,11 @@ Configure the created asset.
 
 The definition created in the previous step must be in a subfolder under `(your mod's content folder)/Maps/`.
 
-Good: `MyCoolMod/Maps/CoolMap/LD_CoolMap`
+Good: `MyCoolMod/Maps/CoolMap/LevelDefinition_CoolMap`
 
-Bad: `MyCoolMod/Maps/LD_CoolMap`
+Bad: `MyCoolMod/Maps/LevelDefinition_CoolMap`
 
-Bad: `MyCoolMod/LD_CoolMap`
+Bad: `MyCoolMod/LevelDefinition_CoolMap`
 
 ## Create a command
 
