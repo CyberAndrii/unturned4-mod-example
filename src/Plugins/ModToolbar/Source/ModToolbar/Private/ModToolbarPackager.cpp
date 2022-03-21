@@ -104,7 +104,7 @@ void FModToolbarPackager::PackagePlugin(TSharedRef<class IPlugin> Plugin)
 	// Hard coded here for simplicity. You will probably want to read this from an ini file
 	FString ReleaseVersion = TEXT("Vanilla");
 
-    FString CommandLine = FString::Printf(TEXT("BuildCookRun -Project=\"%s\" -DLCName=\"%s\" -BasedOnReleaseVersion=\"%s\" -SkipBuild -Cook -Stage -Pak -DLCIncludeEngineContent -TargetPlatform=Win64 -ClientConfig=Shipping -Manifests"),
+    FString CommandLine = FString::Printf(TEXT("BuildCookRun -Project=\"%s\" -DLCName=\"%s\" -BasedOnReleaseVersion=\"%s\" -Build -Cook -Stage -Pak -DLCIncludeEngineContent -TargetPlatform=Win64 -ClientConfig=Shipping -Manifests"),
 		*FPaths::ConvertRelativePathToFull(FPaths::GetProjectFilePath()),
         *Plugin->GetName(),
 		*ReleaseVersion);
