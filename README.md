@@ -58,7 +58,7 @@ Bad: `MyCoolMod/LevelDefinition_CoolMap`
    ![CommandImplementation](assets/images/CommandImplementation.png)
 
 4. To make commands usable, you need to register them first: create an instance
-   of `ExampleMod/Blueprints/BP_CommandRegistrator` on your map and select what commands you want.
+   of `/Content/ModsCommon/Blueprints/BP_CommandRegistrator` on your map and select what commands you want.
 
    ![RegisterCommands](assets/images/RegisterCommands.png)
 
