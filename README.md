@@ -2,8 +2,8 @@
 
 The first-ever modding tutorial for Unturned II.
 
-Note that this is not the official (made by SDG) modding tool. It was made by reverse engineering the game's code. At
-this time, it's only possible to create maps and commands.
+Note that this is not the official modding tool. It was made by reverse engineering the game's code. Be aware of
+possible breaking changes. At this time, it's only possible to create maps and commands.
 
 ![GameAndEditor](assets/images/GameAndEditor.png)
 
@@ -26,25 +26,25 @@ Miscellaneous > DataAsset.
 
 ![CreateDataAsset](assets/images/CreateDataAsset.png)
 
-Select `U4_LevelDefinition` class.
+Select the `U4_LevelDefinition` class.
 
 ![PickLevelDefinition](assets/images/PickLevelDefinition.png)
 
-Configure created asset.
+Configure the created asset.
 
 ## Create a command
 
 1. Right click on the Content Browser window > Blueprint class.
 
-2. Select `U4_AdminCommand` class.
+2. Select the `U4_AdminCommand` class.
 
    ![PickAdminCommand](assets/images/PickAdminCommand.png)
 
-3. Add 'Execute Command' event and implement it.
+3. Add the 'Execute Command' event and implement it.
 
    ![CommandImplementation](assets/images/CommandImplementation.png)
 
-4. To make commands usable, you need to register them: create an instance
+4. To make commands usable, you need to register them first: create an instance
    of `ExampleMod/Blueprints/BP_CommandRegistrator` on your map and select what commands you want.
 
    ![RegisterCommands](assets/images/RegisterCommands.png)
@@ -61,14 +61,15 @@ Configure created asset.
 
    ![CreateModsFolderInGameFiles](assets/images/CreateModsFolderInGameFiles.png)
 
-4. Paste the `(your mod name)` folder into the game's `U4/Mods` folder.
+4. Paste the `(your mod name)` folder into the game's `U4/Mods`.
 
    ![PasteModIntoModsFolder](assets/images/PasteModIntoModsFolder.png)
 
 5. Run the game.
 
-## Assets documentation
+## Useful links
 
-See [Unturned II modding docs](https://wiki.smartlydressedgames.com/wiki/Modding).
+For best practices and documentation see Unturned II's [modding wiki](https://wiki.smartlydressedgames.com/wiki/Modding)
+.
 
 ## Good luck
