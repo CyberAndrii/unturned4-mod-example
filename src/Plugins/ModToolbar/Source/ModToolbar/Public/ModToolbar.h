@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Slate.h"
 #include "ModToolbarPackager.h"
-#include "Modules\ModuleManager.h"
+#include "Modules/ModuleManager.h"
 
 class FToolBarBuilder;
 class FMenuBuilder;
